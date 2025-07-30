@@ -17,7 +17,7 @@ def make_poster_url(path):
 
 # LOAD DATA 
 try:
-    movie_credit = pd.read_csv(os.path.join(current_dir, "movie_credit.csv"))
+    movie_credit = pd.read_csv(os.path.join(data_dir, "movie_credit.csv"))
     tmdb_movie = pd.read_csv(os.path.join(data_dir, "tmdb_movie.csv"))
 except FileNotFoundError as e:
     print(f"Error loading data file: {e}. Please ensure all CSVs are in the 'data' folder.")
